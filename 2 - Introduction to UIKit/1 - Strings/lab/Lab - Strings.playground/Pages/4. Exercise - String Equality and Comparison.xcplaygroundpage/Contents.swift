@@ -42,7 +42,7 @@ import Foundation
 let textToSearchThrough = "To be, or not to be--that is the question"
 let textToSearchFor = "to be, or not to be"
 
-if textToSearchThrough.contains(textToSearchFor) {
+if textToSearchThrough.lowercased().contains(textToSearchFor.lowercased()) {
     print("I found it!")
 }
 /*:

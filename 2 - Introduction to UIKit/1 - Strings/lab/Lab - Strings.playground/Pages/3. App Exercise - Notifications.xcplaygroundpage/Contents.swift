@@ -9,7 +9,7 @@
  */
 let firstName = "Doug"
 let lastName = "Patterson"
-let fullName = firstName + lastName
+let fullName = firstName + " " + lastName
 
 /*:
  Occasionally users of your fitness tracking app will beat previous goals or records. You may want to notify them when this happens for encouragement purposes. Create a new constant `congratulations` and assign it a string literal that uses string interpolation to create the following string:

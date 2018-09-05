@@ -26,6 +26,10 @@ import Foundation
 let userName = "StepChallenger"
 let searchName = "step"
 
+if userName.lowercased().contains(searchName.lowercased()) {
+    print("Possible match: StepChallenger")
+}
+
 
 /*:
  
