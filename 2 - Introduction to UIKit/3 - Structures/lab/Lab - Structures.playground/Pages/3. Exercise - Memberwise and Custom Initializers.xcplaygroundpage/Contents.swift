@@ -3,16 +3,34 @@
  
  If you completed the exercise Structs, Instances, and Default Values, you created a `GPS` struct with default values for properties of `latitude` and `longitude`. Create your `GPS` struct again, but this time do not provide default values. Both properties should be of type `Double`.
  */
-
+struct GPS {
+    var latitude = Double.init()
+    var longitude = Double.init()
+}
 
 /*:
  Now create a constant instance of `GPS` called `somePlace`, and use the memberwise initializer to set `latitude` to 51.514004, and `longitude` to 0.125226. Print the values of `somePlace`'s properties.
  */
+var somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
+
+print(somePlace)
+
 
 
 /*:
  In Structs, Instance, and Default Values, you also created a `Book` struct. Creat this struct again without default values. Give each property appropriate types. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
  */
+struct Book {
+    var title = String.init()
+    var author = String.init()
+    var pages = Int.init()
+    var price = Double.init()
+}
+
+var dougsFavoriteBook = Book(title: "The Alchemist", author: "Paulo Coelho", pages: 208, price: 5.64)
+
+print(dougsFavoriteBook)
+
 
 
 /*:
@@ -22,6 +40,17 @@
  
  - Example: If you use the initializer for inches to pass in a height of 65, the initializer should set `heightInInches` to 65 and `heightInCentimeters` to 165.1.
  */
+
+struct Height {
+    var heightInInches: Double
+    var heightInCentimeters:Double {
+        return heightInInches * 2.54
+    }
+}
+
+var heightOfDoug = Height(heightInInches: 71.0)
+
+print(heightOfDoug)
 
 
 /*:
