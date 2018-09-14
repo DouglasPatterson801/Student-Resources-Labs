@@ -6,9 +6,11 @@
  For most apps you'll need to have a data structure to hold information about a user. Create a `User` struct that has properties for basic information about a user. At a minimum, it should have properties to represent a user's name, age, height, weight, and activity level. You could do this by having `name` be a `String`, `age` be an `Int`, `height` and `weight` be of type `Double`, and `activityLevel` be an `Int` that will represent a scoring 1-10 of how active they are. Implement this now.
  */
 struct User {
-    var name = String.init()
-    var age = Int.init()
-    var height = Double.init()
+    var name: String
+    var age: Int
+    var height: Double
+//NOTICE THAT I CAN INITIALIZE THE PROPERTIES TWO WAYS. WITH A COLON OR WITH [ = DOUBLE.INIT]
+// BOTH WORK BUT USING A COLON IS EASIER
     var weight = Double.init()
     var activityLevel = Int.init()
 }
@@ -19,6 +21,8 @@ struct User {
  */
 
 var dougsInfo = User(name: "Doug", age: 28, height: 71.0, weight: 185.0, activityLevel: 5)
+
+print("My name is \(dougsInfo.name). I am \(dougsInfo.age). I am \(dougsInfo.height) inches tall and weigh \(dougsInfo.weight) pounds. Lately I would say my activity level has been a \(dougsInfo.activityLevel) out of 10")
 
 /*:
  In previous app exercises, you've worked with distance in the fitness tracking app example as a simple number. However, distance can be represented using a variety of units of measurement. Create a `Distance` struct that will represent distance in various units of measurement. At a minimum, it should have a `meters` property and a `feet` property. Create a custom initializer corresponding to each property (i.e. if you only have the two properties for meters and feet you will then have two initializers) that will take in a distance in one unit of measurement and assign the correct value to both units of measurements. Hint: *1 meter = 3.28084 feet*.

@@ -7,7 +7,7 @@
  
  A reoccurring process like this is a perfect candidate for a function. Write a function called `incrementSteps` after the declaration of `steps` below that will increment `steps` by one and then print its value. Call the function multiple times and observe the printouts.
  */
-var steps = 10000
+var steps = 9000
 
 func incrementSteps() {
     steps += 1

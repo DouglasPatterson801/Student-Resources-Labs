@@ -14,12 +14,18 @@ import Foundation
 
 let randomNum = arc4random_uniform(UInt32(5))
 
-func magicEightBall() {
-    print(randomNum)
+switch randomNum {
+case 0:
+    print("Don't count on it.")
+case 1:
+    print("Not likely.")
+case 2:
+    print("Yeah, it could happen.")
+case 3:
+    print("Most definitely!")
+default:
+    print("Why not happen for you?")
 }
 
-
-magicEightBall()
-
-magicEightBall()
+randomNum()
 //: page 1 of 6  |  [Next: App Exercise - A Functioning App](@next)

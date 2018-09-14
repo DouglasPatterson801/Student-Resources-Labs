@@ -7,6 +7,12 @@ class Spaceship {
     let name: String
     var health: Int
     var position: Int
+    
+    init(name: String, health: Int, position: Int) {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
 
     func moveLeft() {
         position -= 1
@@ -24,6 +30,12 @@ class Spaceship {
 class Fighter: Spaceship {
     let weapon: String
     var remainingFirePower: Int
+    
+    init(name: String, weapon: String, remainingFirePower: Int) {
+        self.weapon = weapon
+        self.remainingFirePower = remainingFirePower
+        super.init(name: name, health: 100, position: 0)
+    }
 
     func fire() {
         if remainingFirePower > 0 {
@@ -36,6 +48,12 @@ class Fighter: Spaceship {
 
 class ShieldedShip: Fighter {
     var shieldStrength: Int
+    
+    init(name:String, weapon: String, shieldStrength: Int) {
+        self.shieldStrength = shieldStrength
+        super.init(name: name, weapon: weapon, remainingFirePower: 100)
+        
+    }
     
     override func wasHit() {
         if shieldStrength > 0 {
@@ -50,27 +68,34 @@ class ShieldedShip: Fighter {
  
  Then create an instance of `Spaceship` below called `falcon`. Use the memberwise initializer you just created. The ship's name should be "Falcon."
  */
-
+let falcon = Spaceship(name: "Falcon", health: 100, position: 0)
 
 /*:
  Writing initializers for subclasses can get tricky. Your initializer needs to not only set the properties declared on the subclass, but also set all of the uninitialized properties on classes that it inherits from. Go to the declaration of `Fighter` and write an initializer that takes an argument for each property on `Fighter` and for each property on `Spaceship`. Set the properties accordingly. (Hint: you can call through to a superclass' initializer with `super.init` *after* you initialize all of the properties on the subclass).
  
  Then create an instance of `Fighter` below called `destroyer`. Use the memberwise initializer you just created. The ship's name should be "Destroyer."
  */
-
-
+let destroyer = Fighter(name: "Destroyer", weapon: "Laser" , remainingFirePower: 100)
+print(destroyer.name)
 /*:
  Now go add an initializer to `ShieldedShip` that takes an argument for each property on `ShieldedShip`, `Fighter`, and `Spaceship`, and sets the properties accordingly. Remember that you can call through to the initializer on `Fighter` using `super.init`.
  
  Then create an instance of `ShieldedShip` below called `defender`. Use the memberwise initializer you just created. The ship's name should be "Defender."
  */
-
+let defender = ShieldedShip(name: "Defender", weapon: "Cannon", shieldStrength: 150)
 
 /*:
  Create a new instance of `Spaceship` called `sameShip` and set it equal to `falcon`. Print out the position of `sameShip` and `falcon`, then call `moveLeft()` on `sameShip` and print out the position of `sameShip` and `falcon` again. Did both positions change? Why? If both were structs instead of classes, would it be the same? Why or why not? Provide your answer in a comment or print statement below.
  */
+let sameShip = falcon
+sameShip.moveLeft()
+print(falcon.position)
+falcon.moveLeft()
+print(falcon.position)
 
+//falcon and sameShip have been set to equal each other. So they are the SAME thing but with different names. If this were in a struct, when I declared sameShip = falcon, then it would be like sameShip was cloned rather just being called by a different name.
 
+//ALSO REMEMBER: YOU CAN NOT CALL CLASSES OR STRUCTS ALONE. YOU NEED TO HAVE DECLARED SOMETHING TO HAVE THE VALUE OF A CLASS OR STRUCT AND THEN YOU CAN CALL ON THE PERAMETERS OF THE OBJECT.   FOR EXAMPLE: If I have a struct called, SpaceShip I can declare something like [let falcon = SpaceShip]. Then when I call on falcon alone or in a func or wherever, I get all the perameters I need from SpaceShip through falcon.
 /*:
  
  _Copyright © 2017 Apple Inc._
