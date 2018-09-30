@@ -23,7 +23,7 @@ for entry in typeCollection {
 /*:
  Create a [String : Any] dictionary, where the values are a mixture of doubles, integers, strings, and booleans. Print the key/value pairs within the collection
  */
-var myDictionary: [String: Any] = ["Name": "Doug", "Height": 70, "Shoe": 9.5, "Awesome": true]
+var myDictionary: [String: Any] = ["Name": "Doug", "Height": 70, "Shoe": "9.5", "Awesome": true]
 print(myDictionary)
 /*:
  Create a variable `total` of type `Double` set to 0. Then loop through the dictionary, and add the value of each integer and double to your variable's value. For each string value, add 1 to the total. For each boolean, add 2 to the total if the boolean is `true`, or subtract 3 if it's `false`. Print the value of `total`.
@@ -31,18 +31,20 @@ print(myDictionary)
 var total: Double = 0.0
 
 for entry in myDictionary.values {
-    if let entry = entry as? Double {
-        total += entry
+    if entry is Double {
+        total += 1
     }
-    if let entry = entry as? Int {
-        total += Double(entry)
+    if entry is Int {
+        total += 1
     }
-    if let entry = entry as? String {
-        total += 2
+    if let trueOrFalse = entry as? Bool {
+        if trueOrFalse == true {
+            total += 2
+        } else {
+            total -= 3
+        }
     }
-    if let entry = entry as? Bool {
-        total += 3
-    }
+
 }
 
 /*:
@@ -58,9 +60,11 @@ for item in myDictionary.values {
         totalTwo += Double(item)
     }
     if let item = item as? String {
-        if let newItem = item as? String {
-            totalTwo += 40
+        if let convertedDouble = Double(item) {
+        totalTwo += convertedDouble
         }
     }
 }
+
+print(totalTwo)
 //: page 1 of 2  |  [Next: App Exercise - Workout Types](@next)
