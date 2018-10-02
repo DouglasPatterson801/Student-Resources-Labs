@@ -8,6 +8,8 @@
  Declare a constant `userInputAge` of type `String` and assign it "34e" to simulate a typo while typing age. Then declare a constant `userAge` of type `Int` and use the `Int` initializer and pass in `userInputAge`. What error do you get?
 */
 let userInputAge: String = "34"
+
+//Becuase the Int is an optional (has a question mark) it needs to be unwrapped. Below are two ways that this value can be unwrapped.
 let userAge: Int? = Int(userInputAge)
 /*:
  Go back and change the type of `userAge` to `Int?`, and print the value of `userAge`. Why is `userAge`'s value `nil`? Provide your answer in a comment or print statement below.
@@ -19,11 +21,15 @@ print(userAge)
  
  Print `userAge` again, but this time unwrap `userAge` using the bang operator.
  */
+// This is force unwrapping. This is not ever really recommended. It is almost always better to use optional binding. Using the bang operator, the compiler will crash is the value isn't there.
+
 print(userAge!)
 
 /*:
  Now use optional binding to unwrap `userAge`. If `userAge` has a value, print it to the console.
  */
+//This is optional binding. This tells the compiler what to do if the value is there but it won't crash if the value isn't there.
+
 if let userAge = userAge {
     print(userAge)
 }

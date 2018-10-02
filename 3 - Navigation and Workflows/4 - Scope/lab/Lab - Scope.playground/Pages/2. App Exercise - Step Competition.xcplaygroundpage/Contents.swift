@@ -20,12 +20,14 @@ let competitors = [stepMaster, activeSitter, monsterWalker]
  
  At that point, the goal is to assign the user with the higher score to `topCompetitor`. However, the code generates a compiler error because, due to improper variable shadowing, `topCompetitor` has a narrower scope than it should if it is going to be reassigned. Fix the compiler error below and call `getWinner(competitors:)`, passing in the array `competitors`. Print the `name` property of the returned `User` object. You'll know that you fixed the function properly if the user returned is `activeSitter`.
  */
+
+
 func getWinner(competitors: [User]) -> User? {
     var topCompetitor: User?
     
     for competitor in competitors {
-        if let topCompetitor = topCompetitor {
-            if competitor.stepsToday > topCompetitor.stepsToday {
+        if let firstPlace = topCompetitor {
+            if competitor.stepsToday > firstPlace.stepsToday {
                 topCompetitor = competitor
             }
         } else {
@@ -34,6 +36,9 @@ func getWinner(competitors: [User]) -> User? {
     }
     return topCompetitor
 }
+
+let firstPlace = getWinner(competitors: competitors)
+print(firstPlace?.name ?? "")
 /*:
  Write a memberwise initializer inside the `User` struct above that uses variable shadowing for naming the parameters of the initializer.
  */
