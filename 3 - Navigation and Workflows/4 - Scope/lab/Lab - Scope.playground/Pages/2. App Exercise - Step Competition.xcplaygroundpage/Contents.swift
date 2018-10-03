@@ -8,6 +8,20 @@
 struct User {
     var name: String
     var stepsToday: Int
+    
+    init(name: String, stepsToday: Int) {
+        self.name = name
+        self.stepsToday = stepsToday
+    }
+    
+    init?(name: String?, stepsToday: Int?) {
+        guard let name = name,
+            let stepsToday = stepsToday else {return nil}
+        
+        self.name = name
+        self.stepsToday = stepsToday
+    }
+    
 }
 
 let stepMaster = User(name: "StepMaster", stepsToday: 8394)
