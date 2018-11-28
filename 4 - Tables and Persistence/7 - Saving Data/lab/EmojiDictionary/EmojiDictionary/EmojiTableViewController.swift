@@ -68,6 +68,12 @@ class EmojiTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let savedEmojis = Emoji.loadFromFile() {
+            emojis = savedEmojis
+        } else {
+            emojis = Emoji.loadSampleEmojis()
+        }
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44.0
     }

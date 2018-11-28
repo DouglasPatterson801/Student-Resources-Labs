@@ -3,21 +3,66 @@ import UIKit
 
 class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate {
 
+    //==================================================
+    // MARK: -Properties
+    //==================================================
+    
     struct PropertyKeys {
         static let unwindToListIndentifier = "UnwindToListSegue"
+    }
+    
+    var isEditingBirthday: Bool = false {
+        didSet {
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
     }
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var employeeTypeLabel: UILabel!
+    @IBOutlet weak var dobPicker: UIDatePicker!
     
     var employee: Employee?
+    var employeeType: EmployeeType?
+    
+    let dobRow = 1
+    let dobPickerRow = 2
+    let defaultRowHeight = CGFloat = 44
+    
+    //==================================================
+    // MARK: -View LifeCycles
+    //==================================================
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateView()
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if isEditingBirthday {
+            return dobPicker.frame.height
+        }
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.row == dobRow else {return}
+        isEditingBirthday = !isEditingBirthday
+        dobLabel.text = formatDate(date: dobPicker.date)
+    }
+    
+    func formatDate(date: Date) -> String{
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: date)
+    }
+
+    @IBAction func datePickerValueChanged(_ sender: Any) {
+        dobLabel.text = formatDate(date: dobPicker.date)
+    }
+    
     
     func updateView() {
         if let employee = employee {
@@ -35,8 +80,9 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        if let name = nameTextField.text {
-            employee = Employee(name: name, dateOfBirth: Date(), employeeType: .exempt)
+        if let name = nameTextField.text,
+            let employeeType = employeeType {
+            employee = Employee(name: name, dateOfBirth: dobPicker.date, employeeType: employeeType)
             performSegue(withIdentifier: PropertyKeys.unwindToListIndentifier, sender: self)
         }
     }
