@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD404FF2153F25E00CCD6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD404FE2153F25E00CCD6FC /* AppDelegate.swift */; };
+		2FD405012153F25E00CCD6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD405002153F25E00CCD6FC /* ViewController.swift */; };
+		2FD405042153F25E00CCD6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD405022153F25E00CCD6FC /* Main.storyboard */; };
+		2FD405062153F26000CCD6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD405052153F26000CCD6FC /* Assets.xcassets */; };
+		2FD405092153F26000CCD6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD405072153F26000CCD6FC /* LaunchScreen.storyboard */; };
+		2FD405142153F26000CCD6FC /* Lab_2_9_Two_ButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD405132153F26000CCD6FC /* Lab_2_9_Two_ButtonsTests.swift */; };
+		2FD4051F2153F26000CCD6FC /* Lab_2_9_Two_ButtonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4051E2153F26000CCD6FC /* Lab_2_9_Two_ButtonsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FD405102153F26000CCD6FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD404F32153F25E00CCD6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FD404FA2153F25E00CCD6FC;
+			remoteInfo = "Lab 2.9 Two Buttons";
+		};
+		2FD4051B2153F26000CCD6FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD404F32153F25E00CCD6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FD404FA2153F25E00CCD6FC;
+			remoteInfo = "Lab 2.9 Two Buttons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FD404FB2153F25E00CCD6FC /* Lab 2.9 Two Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab 2.9 Two Buttons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD404FE2153F25E00CCD6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FD405002153F25E00CCD6FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FD405032153F25E00CCD6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FD405052153F26000CCD6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FD405082153F26000CCD6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FD4050A2153F26000CCD6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD4050F2153F26000CCD6FC /* Lab 2.9 Two ButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab 2.9 Two ButtonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD405132153F26000CCD6FC /* Lab_2_9_Two_ButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_2_9_Two_ButtonsTests.swift; sourceTree = "<group>"; };
+		2FD405152153F26000CCD6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD4051A2153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab 2.9 Two ButtonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD4051E2153F26000CCD6FC /* Lab_2_9_Two_ButtonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_2_9_Two_ButtonsUITests.swift; sourceTree = "<group>"; };
+		2FD405202153F26000CCD6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FD404F82153F25E00CCD6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD4050C2153F26000CCD6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD405172153F26000CCD6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD404F22153F25E00CCD6FC = {
+			isa = PBXGroup;
+			children = (
+				2FD404FD2153F25E00CCD6FC /* Lab 2.9 Two Buttons */,
+				2FD405122153F26000CCD6FC /* Lab 2.9 Two ButtonsTests */,
+				2FD4051D2153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests */,
+				2FD404FC2153F25E00CCD6FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FD404FC2153F25E00CCD6FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FD404FB2153F25E00CCD6FC /* Lab 2.9 Two Buttons.app */,
+				2FD4050F2153F26000CCD6FC /* Lab 2.9 Two ButtonsTests.xctest */,
+				2FD4051A2153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD404FD2153F25E00CCD6FC /* Lab 2.9 Two Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2FD404FE2153F25E00CCD6FC /* AppDelegate.swift */,
+				2FD405002153F25E00CCD6FC /* ViewController.swift */,
+				2FD405022153F25E00CCD6FC /* Main.storyboard */,
+				2FD405052153F26000CCD6FC /* Assets.xcassets */,
+				2FD405072153F26000CCD6FC /* LaunchScreen.storyboard */,
+				2FD4050A2153F26000CCD6FC /* Info.plist */,
+			);
+			path = "Lab 2.9 Two Buttons";
+			sourceTree = "<group>";
+		};
+		2FD405122153F26000CCD6FC /* Lab 2.9 Two ButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FD405132153F26000CCD6FC /* Lab_2_9_Two_ButtonsTests.swift */,
+				2FD405152153F26000CCD6FC /* Info.plist */,
+			);
+			path = "Lab 2.9 Two ButtonsTests";
+			sourceTree = "<group>";
+		};
+		2FD4051D2153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FD4051E2153F26000CCD6FC /* Lab_2_9_Two_ButtonsUITests.swift */,
+				2FD405202153F26000CCD6FC /* Info.plist */,
+			);
+			path = "Lab 2.9 Two ButtonsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD404FA2153F25E00CCD6FC /* Lab 2.9 Two Buttons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD405232153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two Buttons" */;
+			buildPhases = (
+				2FD404F72153F25E00CCD6FC /* Sources */,
+				2FD404F82153F25E00CCD6FC /* Frameworks */,
+				2FD404F92153F25E00CCD6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lab 2.9 Two Buttons";
+			productName = "Lab 2.9 Two Buttons";
+			productReference = 2FD404FB2153F25E00CCD6FC /* Lab 2.9 Two Buttons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FD4050E2153F26000CCD6FC /* Lab 2.9 Two ButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD405262153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two ButtonsTests" */;
+			buildPhases = (
+				2FD4050B2153F26000CCD6FC /* Sources */,
+				2FD4050C2153F26000CCD6FC /* Frameworks */,
+				2FD4050D2153F26000CCD6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FD405112153F26000CCD6FC /* PBXTargetDependency */,
+			);
+			name = "Lab 2.9 Two ButtonsTests";
+			productName = "Lab 2.9 Two ButtonsTests";
+			productReference = 2FD4050F2153F26000CCD6FC /* Lab 2.9 Two ButtonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FD405192153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD405292153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two ButtonsUITests" */;
+			buildPhases = (
+				2FD405162153F26000CCD6FC /* Sources */,
+				2FD405172153F26000CCD6FC /* Frameworks */,
+				2FD405182153F26000CCD6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FD4051C2153F26000CCD6FC /* PBXTargetDependency */,
+			);
+			name = "Lab 2.9 Two ButtonsUITests";
+			productName = "Lab 2.9 Two ButtonsUITests";
+			productReference = 2FD4051A2153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD404F32153F25E00CCD6FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Douglas Patterson";
+				TargetAttributes = {
+					2FD404FA2153F25E00CCD6FC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2FD4050E2153F26000CCD6FC = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2FD404FA2153F25E00CCD6FC;
+					};
+					2FD405192153F26000CCD6FC = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2FD404FA2153F25E00CCD6FC;
+					};
+				};
+			};
+			buildConfigurationList = 2FD404F62153F25E00CCD6FC /* Build configuration list for PBXProject "Lab 2.9 Two Buttons" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FD404F22153F25E00CCD6FC;
+			productRefGroup = 2FD404FC2153F25E00CCD6FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD404FA2153F25E00CCD6FC /* Lab 2.9 Two Buttons */,
+				2FD4050E2153F26000CCD6FC /* Lab 2.9 Two ButtonsTests */,
+				2FD405192153F26000CCD6FC /* Lab 2.9 Two ButtonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FD404F92153F25E00CCD6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD405092153F26000CCD6FC /* LaunchScreen.storyboard in Resources */,
+				2FD405062153F26000CCD6FC /* Assets.xcassets in Resources */,
+				2FD405042153F25E00CCD6FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD4050D2153F26000CCD6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD405182153F26000CCD6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD404F72153F25E00CCD6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD405012153F25E00CCD6FC /* ViewController.swift in Sources */,
+				2FD404FF2153F25E00CCD6FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD4050B2153F26000CCD6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD405142153F26000CCD6FC /* Lab_2_9_Two_ButtonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD405162153F26000CCD6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD4051F2153F26000CCD6FC /* Lab_2_9_Two_ButtonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FD405112153F26000CCD6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FD404FA2153F25E00CCD6FC /* Lab 2.9 Two Buttons */;
+			targetProxy = 2FD405102153F26000CCD6FC /* PBXContainerItemProxy */;
+		};
+		2FD4051C2153F26000CCD6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FD404FA2153F25E00CCD6FC /* Lab 2.9 Two Buttons */;
+			targetProxy = 2FD4051B2153F26000CCD6FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FD405022153F25E00CCD6FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD405032153F25E00CCD6FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FD405072153F26000CCD6FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD405082153F26000CCD6FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FD405212153F26000CCD6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FD405222153F26000CCD6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FD405242153F26000CCD6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two Buttons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-Buttons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FD405252153F26000CCD6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two Buttons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-Buttons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FD405272153F26000CCD6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two ButtonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-ButtonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab 2.9 Two Buttons.app/Lab 2.9 Two Buttons";
+			};
+			name = Debug;
+		};
+		2FD405282153F26000CCD6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two ButtonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-ButtonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab 2.9 Two Buttons.app/Lab 2.9 Two Buttons";
+			};
+			name = Release;
+		};
+		2FD4052A2153F26000CCD6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two ButtonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-ButtonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lab 2.9 Two Buttons";
+			};
+			name = Debug;
+		};
+		2FD4052B2153F26000CCD6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lab 2.9 Two ButtonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DougPattersonDevelopment.Lab-2-9-Two-ButtonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lab 2.9 Two Buttons";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD404F62153F25E00CCD6FC /* Build configuration list for PBXProject "Lab 2.9 Two Buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD405212153F26000CCD6FC /* Debug */,
+				2FD405222153F26000CCD6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD405232153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two Buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD405242153F26000CCD6FC /* Debug */,
+				2FD405252153F26000CCD6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD405262153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two ButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD405272153F26000CCD6FC /* Debug */,
+				2FD405282153F26000CCD6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD405292153F26000CCD6FC /* Build configuration list for PBXNativeTarget "Lab 2.9 Two ButtonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD4052A2153F26000CCD6FC /* Debug */,
+				2FD4052B2153F26000CCD6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FD404F32153F25E00CCD6FC /* Project object */;
+}
